@@ -1,0 +1,79 @@
+@mixin tablet {
+    @media screen and (min-width: $tablet-breakpoint) {
+      @content;
+    }
+  }
+  
+  @mixin desktop {
+    @media screen and (min-width: $desktop-breakpoint) {
+      @content;
+    }
+  }
+
+  @mixin reset-margin-border-box {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  @mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  @mixin body {
+    font-size: 16px;
+    line-height: 26px;
+    }
+
+  @mixin h1 {
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 600;
+    }
+  
+    @mixin h2 {
+      font-size: 40px;
+    line-height: 48px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    }
+
+    @mixin h3 {
+      font-size: 20px;
+    line-height: 26px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    }
+
+    @mixin btn {
+      padding: 1em 2em;
+      font-size: 15px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      cursor: pointer;
+      border-style: none;
+      border-radius: 8px;
+      font-weight: 600;
+
+    }
+
+    @mixin button-dark-normal {
+      background: $white;
+      color: $dark-grey;
+      
+    }
+
+    @mixin button-light-normal {
+      background: $peach;
+      color: $white;
+      
+    }
+
+    @mixin button-active {
+      background: $light-peach;
+      color: $white;
+     
+    }
+
+
